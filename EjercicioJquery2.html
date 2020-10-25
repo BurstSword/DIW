@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#boton").click(function () {
+                $("[href*='alexelcapo']").hide();
+            });
+            $("#boton2").click(function () {
+                $("[href*='Willyrex']").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>
+        <a href="https://www.youtube.com/user/alexelcapo" target="_blank">
+            <img src="https://yt3.ggpht.com/a/AATXAJyutj2wY8E74nai8K50wQBVjb4ArRedt38qu8L2hw=s88-c-k-c0x00ffffff-no-rj">
+        </a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/user/Willyrex">
+            <img src="https://yt3.ggpht.com/a/AATXAJy2EfHAFEatodi76MYflE5jDFd4wyaxxNo_rI2nMg=s88-c-k-c0x00ffffff-no-rj">
+        </a>
+    </p>
+    <div>
+        <button id="boton">Ocultar a Alex</button>
+        <button id="boton2">Ocultar a Willy</button>
+    </div>
+</body>
+
+</html>
