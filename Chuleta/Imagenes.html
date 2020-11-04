@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Imagenes</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="m-3">Imagenes</h1>
+        <p class="m-2"> Las imágenes son un elemento esencial en las páginas web. Hasta la versión 5 de HTML se
+            utilizaba la etiqueta <img> para incluirlas en una página web. Pero debido a la necesidad de crear páginas
+            web que se adapten a dispositivos de diferente tamaño se ha incorporado la etiqueta <picture>.
+
+                Antes de ver cómo incluir imágenes en una página web conviene distinguir los diferentes tipos de
+                imágenes que existen: mapas de bits, vectoriales y generadas dinámicamente. Las imágenes más comunes son
+                las de mapa de bits que están formadas por puntos de colores, por ejemplo una cámara de fotos digital
+                utiliza imágenes de este tipo, los tipos de archivos más usados son .jpg, y .png; también se utilizan
+                mucho para gráficos y animaciones las de tipo .gif. Para crear imágenes de mapa de bits puedes utilizar
+                programas como Photoshop y Gimp (gratis)
+
+                Las imágenes vectoriales están definidas por fórmulas matemáticas en base a vectores y permiten
+                ampliarlas sin perder resolución. Suelen ser gráficos, esquemas, logos, etc. Uno de los tipos de
+                archivos usados en la web es .svg. Para crear imágenes vectoriales se utilizan programas como CorelDraw,
+                Illustrator y Inkscape (gratis).
+
+                Las imágenes generadas dinámicamente se crean en el mismo momento de cargarse la página web y pueden
+                modificarse en tiempo real por intervención del usuario o por eventos, por ejemplo, en videojuegos. Para
+                este tipo de imágenes se utilizan las tecnologías Canvas y SVG.</p>
+
+        <p class="m-2">
+            Con la etiqueta &#60;img> representamos imágenes en una página web. Esta etiqueta no tiene etiqueta de
+            cierre, se cierra con el carácter >, aunque también se puede cerrar con />. Para indicar el origen de la
+            imagen se utiliza el atributo src="ruta_imagen". Por ejemplo:
+
+            &#60;img src="imagenes/rick.png"/>
+
+            Esta línea produce este resultado:
+            <img src="imagenes/rick.png" />
+        </p>
+
+        <p class="m-2">
+        <h1 class="m-3">La etiqueta picture</h1>
+        <p class="m-2">La etiqueta picture es la nueva manera de insertar imágenes en una página web de una forma más
+            flexible que con la etiqueta img que ha venido usándose hasta las versión 5.1. de HTML. La etiqueta picture
+            es preferible sobre todo si queremos diseñar páginas web que se adapten a todo tipo de pantallas. Ya que
+            permite mostrar diferentes imágenes en función de varios parámetros, como las dimensiones de la ventana,
+            orientación de la ventana, tipo de imagen y resolución del dispositivo.
+
+            Es decir, por ejemplo, podemos mostrar diferentes versiones de una imagen según el ancho de la ventana del
+            navegador con el que se va a visualizar la imagen; así mostraremos una imagen pequeña en un teléfono móvil,
+            una imagen mediana en un tablet y una imagen grande en un ordenador.
+
+            El formato genérico de la etiqueta picture es el siguiente:</p>
+
+        <div class="card border-success mb-3" style="width: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Etiqueta Picture</h5>
+                <hr>
+                <p class="card-text">
+                    &#60;picture>
+                    <br>
+                    &#60;source media="(condición 1)" srcset="imagen_1.jpg">
+                    <br>
+                    &#60;source media="(condición n)" srcset="imagen_n.jpg">
+<br>
+
+                    &#60;img src="imagen_alt" alt="Si no se cumple ninguna condición">
+<br>
+                    &#60;/picture>
+                </p>
+            </div>
+        </div>
+
+        </p>
+    </div>
+</body>
+
+</html>

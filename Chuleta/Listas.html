@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Lista</title>
+    <style>
+        #listaSqr {
+            list-style-type: square;
+        }
+
+        #listaImg {
+            list-style-image: 25px;
+            list-style-image: url(./Imagenes/rickSmall.png);
+        }
+
+        #listaRmn {
+            list-style-type: lower-roman;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="m-3">Listas desordenadas</h1>
+        <p class="m-2">La etiqueta &#60;ul&#62; define una lista desordenada.
+            Entre la etiqueta de apertura y la de cierre se incluyen los elementos de la lista con la etiqueta
+            &#60;li&#62;.</p>
+        <strong> &#60;ul&#62;&#60;li&#62;&#60;Patatita/li&#62; &#60;li&#62;Patatita2&#60;/li&#62;
+            &#60;li&#62;Patatita3&#60;/li&#62; &#60;/ul&#62;</strong>
+
+        <div class="card border-success mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Resultado de la lista</h5>
+                <hr>
+                <p class="card-text">
+                <ul>
+                    <li>Patatita</li>
+                    <li>Patatita2</li>
+                    <li>Patatita3</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <p>
+            Estilo a las listas
+
+            Por defecto, delante de cada elemento se pone un disco o punto negro. Podemos cambiar este marcador (o
+            viñeta) modificando el atributo list-style-type con hojas de estilo.
+
+            Para listas desordenadas, los valores más usuales son:
+            <br><br>
+            none: No muestra ningún marcador.<br>
+            disc: Muestra un punto negro. Es el valor por defecto.<br>
+            circle: Un círculo vacío.<br>
+            square: Un cuadrado.<br>
+            A continuación tenemos un ejemplo con <strong>square</strong>.
+        </p>
+        <div class="card border-success mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Resultado de la lista</h5>
+                <hr>
+                <p class="card-text">
+                <ul id="listaSqr">
+                    <li>Patatita</li>
+                    <li>Patatita2</li>
+                    <li>Patatita3</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <p>
+            También se puede poner una imagen en lugar de los marcadores predefinidos como vamos a ver en el ejemplo a
+            continuación:
+
+        </p>
+        <div class="card border-success mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Resultado de la lista</h5>
+                <hr>
+                <p class="card-text">
+                <ul id="listaImg">
+                    <li>Patatita</li>
+                    <li>Patatita2</li>
+                    <li>Patatita3</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <h1 class="m-3">Listas ordenadas</h1>
+        <p class="m-2">La etiqueta &#60;ol&#62; define una lista desordenada.
+            Entre la etiqueta de apertura y la de cierre se incluyen los elementos de la lista con la etiqueta
+            &#60;li&#62;.</p>
+        <strong> &#60;ol&#62;&#60;li&#62;&#60;Patatita/li&#62; &#60;li&#62;Patatita2&#60;/li&#62;
+            &#60;li&#62;Patatita3&#60;/li&#62; &#60;/ol&#62;</strong>
+
+        <div class="card border-success mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Resultado de la lista</h5>
+                <hr>
+                <p class="card-text">
+                <ol>
+                    <li>Patatita</li>
+                    <li>Patatita2</li>
+                    <li>Patatita3</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+        <p>Al igual que en las lista desordenadas, podemos cambiar los marcadores de la lista, a continuación están los
+            más utilizados:
+            <br><br>
+            none: No muestra ningún marcador.<br>
+            decimal: Números decimales: 1, 2, 3... 10, 11...<br>
+            decimal-leading-zero: Números decimales con zeros delante: 01, 02, 03... 10, 11...<br>
+            lower-roman: Números romanos en minúsculas: i, ii, iii, iv, v...<br>
+            upper-roman: Númeors romanos en mayúsculas: I, II, III, IV, V...<br>
+            lower-alpha: Letras en minúscula: a, b, c, d...<br>
+            upper-alpha: Letras en mayúscula: A, B, C, D...<br>
+            A continuación un ejemplo con <strong>lower-roman</strong>:
+        </p>
+        <div class="card border-success mb-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Resultado de la lista</h5>
+                <hr>
+                <p class="card-text">
+                <ol id="listaRmn">
+                    <li>Patatita</li>
+                    <li>Patatita2</li>
+                    <li>Patatita3</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

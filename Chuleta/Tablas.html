@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="m-3">Tablas</h1>
+        <p class="m-2">
+            La etiqueta &#60;table> y su correspondiente etiqueta de cierre &#60;/table> definen la tabla.
+            Entre ambas etiquetas se escriben las etiquetas de fila &#60;tr> y &#60;/tr> y dentro de las filas
+            las etiquetas de celda &#60;td> y &#60;/td>, entre estas se escribe el contenido
+            de la celda que puede ser cualquier etiqueta de HTML o directamente un texto.
+            Por lo tanto la tabla más sencilla con una sola celda sería esta:
+
+        </p>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body text-center">
+                <h4 class="card-text">Tabla de una celda</h4>
+                &#60;table>
+                <br>
+                &#60;tr>
+                <br>
+                &#60;td>Celda 1.1.</td>
+                <br>
+                &#60;/tr>
+                <br>
+                &#60;/table>
+            </div>
+        </div>
+        <p class="m-2">El resultado sería el siguiente:</p>
+        <table border="1px">
+            <tr>
+                <td>Celda 1.1.</td>
+            </tr>
+        </table>
+        <p class="m-2">En este ejemplo ya se ve una tabla más compleja con más de 1 columna y más de una fila:</p>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body text-center">
+                <h4 class="card-text">Tabla de una celda</h4>
+                &#60;table> <br>
+                &#60;tr> <br>
+                &#60;td>Marcas</td> <br>
+                &#60;td>Seat</td> <br>
+                &#60;td>Ford</td> <br>
+                &#60;td>BMW</td> <br>
+                &#60;/tr> <br>
+                &#60;tr> <br>
+                &#60;td>2016</td> <br>
+                &#60;td>23900</td> <br>
+                &#60;td>21500</td> <br>
+                &#60;td>11500</td> <br>
+                &#60;/tr> <br>
+                &#60;tr> <br>
+                &#60;td>2017</td> <br>
+                &#60;td>24600</td> <br>
+                &#60;td>23500</td> <br>
+                &#60;td>13400</td> <br>
+                &#60;/tr> <br>
+                &#60;/table>
+            </div>
+        </div>
+        <p class="m-2">El resultado sería el siguiente:</p>
+
+        <table border="1px">
+            <tr>
+            <td>Marcas
+            <td>Seat
+            <td>Ford
+            <td>BMW
+            </tr>
+            <tr>
+            <td>2016
+            <td>23900
+            <td>21500
+            <td>11500
+            </tr>
+            <tr>
+            <td>2017
+            <td>24600
+            <td>23500
+            <td>13400
+            </tr>
+            </table>
+    </div>
+</body>
+
+</html>
