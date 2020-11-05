@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/posicionamientos.css">
+    <title>Posicionamientos</title>
+</head>
+
+<body>
+    <h1></h1>
+    <p>La propiedad position tiene seis valores posibles, que son :</p>
+
+    <h2>Static</h2>
+    <p>Este valor el elemento al que se le aplique sigue el flujo normal de la página</p>
+
+    <div class="card border-success mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Codigo cajas</h5>
+            <img src="./Imagenes/Screenshot_1.png">
+        </div>
+    </div>
+
+    <div class="cubo"></div>
+    <div class="cubo" id="movido"></div>
+    <div class="cubo"></div>
+    <p>
+        Le aplicamos la propiedad left y se ve que la ha ignorado.
+    </p>
+
+
+    <h2>Relative</h2>
+    <p>Este valor el elemento al que se le aplique se posiciona en función del flujo normal de la página</p>
+
+    <div class="card border-success mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Codigo cajas</h5>
+            <img src="./Imagenes/Screenshot_2.png">
+        </div>
+    </div>
+
+    <div class="cubo"></div>
+    <div class="cubo" id="movido1"></div>
+    <div class="cubo"></div>
+    <p>
+        En este caso se ve como se le ha aplicado la propiedad left y sí que le ha afectado el cambio.
+    </p>
+
+    <h2>Absolute</h2>
+    <p>Este elemento toma el posicionamiento respecto a la ventana del navegador y no el flujo normal</p>
+
+    <div class="card border-success mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Codigo cajas</h5>
+            <img src="./Imagenes/Screenshot_2.png">
+        </div>
+    </div>
+
+    <div class="cubo"></div>
+    <div class="cubo" id="movido2"></div>
+    <div class="cubo"></div>
+    <p>
+        Se le a aplican las propiedades y se ve como el cubo se posiciona encima de los otros dos y movido hacia la
+        derecha.
+    </p>
+
+    <h2>Fixed</h2>
+    <p>Este elemento funciona de manera similar al Absolute, pero este aunque hagas scroll hacia abajo seguirá tomando
+        como referencia
+        la ventana, así que bajará contigo en la misma posición.
+    </p>
+
+    <div class="card border-success mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Codigo cajas</h5>
+            <img src="./Imagenes/Screenshot_2.png">
+        </div>
+    </div>
+
+    <div class="cubo"></div>
+    <div class="cubo" id="movido3"></div>
+    <div class="cubo"></div>
+    <p>
+        Al descomentar el código podremos ver como el cubo rojo nos seguirá por toda la página
+    </p>
+    <h2>Inherit</h2>
+    <p>
+        Este elemento tomará las propiedades que tenga el padre establecidas.
+    </p>
+    <h2>Initial</h2>
+    <p>
+        Esta propiedad haría la misma función que static.
+    </p>
+    <h2>Sticky</h2>
+    <p>
+        Por último tenemos esta, que funciona como relative hasta que bajamos el scroll, entonces pasa a funcionar como si fuera fixed.
+    </p>
+</body>
+
+</html>

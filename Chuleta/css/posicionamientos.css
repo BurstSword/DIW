@@ -1,0 +1,27 @@
+.cubo {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 1px black solid;
+}
+
+#movido {
+    left: 100px;
+}
+
+#movido1 {
+    position: relative;
+    left: 100px;
+}
+
+#movido2 {
+    position: absolute;
+    top: 1640px;
+    left: 40px;
+}
+/*
+#movido3 {
+    position: fixed;
+    top: 40px;
+    left: 50px;
+}*/
