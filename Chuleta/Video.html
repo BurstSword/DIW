@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/chuleta.css">
+    <title>Vídeos</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Vídeos</h1>
+        <hr>
+        <p>En HTML5 se introduce la interesante posibilidad de mostrar videos directamente desde nuestro navegador. De
+            hecho, si arrastramos un video a la ventana del navegador, veremos que comienza a reproducirse en él. Para
+            poder insertar videos en nuestras páginas HTML tenemos que utilizar la etiqueta &lt;video>, que junto a la
+                etiqueta
+                &lt;source> podremos utilizar estas capacidades multimedia de HTML5.
+        </p>
+        <h5>Atributos:</h5>
+        <p>
+            <strong>src</strong>: La dirección del video que se va a insertar.
+            <br>
+            <strong>poster</strong>: Un enlace que indica la portada del vídeo hasta que el usuario lo reproduzca. Si no
+            se especifica,
+            no se mostrará nada hasta que el primer cuadro esté disponible.
+            <br>
+            <strong>autoplay</strong>: Es un atributo booleano; si se aplica, el vídeo comenzará a reproducirse
+            automáticamente tan pronto como sea posible.
+            <br>
+            <strong>loop</strong>: Un atributo booleano; si se aplica, el vídeo se reproducirá de nuevo automaticamente
+            al finalizar.
+            <br>
+            
+            
+            <br>
+            En caso de querer insertar un vídeo de una página de internet, como por ejemplo YouTube, utilizaremos la
+            etiqueta <strong>&lt;iframe></strong>,
+            añadiendo los atributos width, height y src. Sin embargo, no hay que escribir el código a mano: solo hay que
+            darle click derecho al vídeo de YouTube
+            que queramos insertar y elegir la opción "Copiar código de inserción".
+            <br>
+            <br>
+            <iframe width="786" height="442"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?list=PLahKLy8pQdCM0SiXNn3EfGIXX19QGzUG3" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </p>
+    </div>
+</body>
+
+</html>
