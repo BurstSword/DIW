@@ -4,15 +4,35 @@ body {
 
 .box {
     background-color: rgb(221, 132, 132);
-    
 }
 
 .wrapper {
-    width: 600px;
     height: 600px;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-auto-flow: column;
+    /* grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);   */
+    grid-template-areas: "a a a a";
+    grid-auto-rows: 20%; 
+    /* grid-template-columns: repeat(auto-fit, 80px); */
+    
 }
+.box1 {
+    background-color: rgb(230, 228, 137);
+}
+.box2 {
+    background-color: rgb(132, 221, 209);
+}
+.box3 {
+    background-color: rgb(132, 221, 172);
+}
+.box4 {
+    background-color: rgb(196, 132, 221);
+}
+.box5 {
+    background-color: rgb(221, 132, 151);
+}
+.box6{
+    background-color: rgb(132, 160, 221);
+}
+
