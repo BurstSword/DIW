@@ -1,0 +1,36 @@
+.fila1{
+    background-color: green;
+    height: 50px;
+    border-style: solid;
+    border-color: white;
+}
+.rectanguloRojo{
+    background-color: red;
+    height: 100px;
+    border-style: solid;
+    border-color: white;
+}
+.rectanguloAzul{
+    background-color:blue;
+    height: 100px;
+    border-style: solid;
+    border-color: white;
+}
+.fila2{
+    background-color: pink;
+    height: 50px;
+    border-style: solid;
+    border-color: white;
+}
+.naranja{
+    background-color: orange;
+    height: 50px;
+    border-style: solid;
+    border-color: white;
+}
+.fila3{
+    background-color: blue;
+    height: 50px;
+    border-style: solid;
+    border-color: white;
+}
